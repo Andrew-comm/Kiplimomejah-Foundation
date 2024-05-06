@@ -51,21 +51,3 @@ header .navbar-brand{
     width: 300px;
 }
 }
-
-@media (min-width: 992px) {
-    .carousel {
-        margin-right: 15px; /* Add small space between carousel and home content */
-    }
-}
-
-@media (max-width: 991px) {
-    .don-sec .col-lg-4 {
-        flex: 0 0 calc(50% - 30px); /* Adjust width for medium screens */
-    }
-}
-
-@media (max-width: 767px) {
-    .don-sec .col-lg-4 {
-        flex: 0 0 calc(100% - 30px); /* Adjust width for small screens */
-    }
-}

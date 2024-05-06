@@ -123,6 +123,48 @@ nav{
 .carousel {
     margin-top: 50px; /* Adjust margin as needed */
 }
+.carousel-caption {
+    display: block !important; /* Show captions on all screens */
+    position: absolute;
+    bottom: 0; /* Align captions to the bottom */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Add padding */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    font-size: 14px; /* Adjust font size */
+    margin: 5px 0; /* Add margin */
+}
+
+.carousel-caption p:last-child {
+    margin-bottom: 0; /* Remove extra margin for the last paragraph */
+}
+
+@media (max-width: 476px) {
+    .carousel-caption {
+        /* Override styles for small screens here */
+        bottom: 20px; /* Adjust the position of the captions */
+        border-radius: 5px; /* Add border-radius */
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+        font-size: 16px; /* Adjust font size for small screens */
+    }
+
+    .carousel-caption p {
+        margin-bottom: 0; /* Remove extra margin for smaller screens */
+    }
+}
+
+.carousel {
+    margin-top: 50px; /* Adjust margin as needed */
+}
 
 .home-sec .home-content {
     align-items: center;
