@@ -204,31 +204,47 @@ nav{
     padding: 150px 0;
 }
 
-@media only screen and (max-width: 768px) {
-    .dbox-donation-page-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-    .dbox-donation-page-button img {
-        height: 16px;
-    }
-}
+
 
 /* About section */
-.about-sec{
-    padding: 150px 0;
-    background-color: #e6edff;
+.about-sec {
+    padding: 50px 0;
 }
 
-.about-sec img{
-    width: 350px;
-    border: 5px solid #303054;
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-image {
+    flex: 0 0 calc(50% - 5px);
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
-.about-sec .about-txt p{
-    font-size: 18px;
+.about-content {
+    padding-left: 20px;
 }
+
+.about-content .heading h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
 /* Donation Section */
 .don-sec {
     background-color: #e6edff;
@@ -451,6 +467,30 @@ footer .social a img{
     background: #303054;
 }
 
+
+.image-container {
+    margin-top: 20px;
+}
+
+.flood-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Adjust as needed */
+    margin-bottom: 10px; /* Add space between images */
+    margin-right: 10px; /* Add space to the right of images */
+    object-fit: cover; /* Ensure all images have the same aspect ratio */
+}
+
+@media (max-width: 992px) {
+    .image-container .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 
 
 
