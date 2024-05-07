@@ -204,6 +204,16 @@ nav{
     padding: 150px 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .dbox-donation-page-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .dbox-donation-page-button img {
+        height: 16px;
+    }
+}
+
 /* About section */
 .about-sec{
     padding: 150px 0;
